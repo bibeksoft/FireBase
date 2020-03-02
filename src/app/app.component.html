@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Employee List</h1>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let employee of employeeList ">
+        
+           <span> <i class="fa fa-user-circle" aria-hidden="true"></i> {{employee.Ename}}</span>
+          
+            <span> <i class="fa fa-calendar" aria-hidden="true"></i> {{employee.Age}}</span>
+          
+            <span> <i class="fa fa-id-badge" aria-hidden="true"></i>{{employee.EID}}</span>
+            <span>  <i class="fa fa-diamond" aria-hidden="true"></i>{{employee.Desigination}}</span>
+                 
+            <span> <i class="fa fa-mobile" aria-hidden="true"></i>{{employee.ContactNo}}</span>
+                      
+            <span> <i class="fa fa-address-card" aria-hidden="true"></i>{{employee.Address}}</span>
+            <span> <i class="fa fa-info-circle" aria-hidden="true"></i>{{employee.Bio}}</span>
+                              
+                                <div class="row">
+                                   <i class="fa fa-plus" aria-hidden="true" style="color:rgb(6, 62, 218);font-size:26px" (click)='OnCreate()'></i>
+                                   <button (click)='OnDeleteData()'><i class="fa fa-trash" aria-hidden="true" trole="button" style="color:red;font-size:26px"></i></button>
+                                  </div>
+     
+    </li>
+  </ul>
+</div>
+
+
+
